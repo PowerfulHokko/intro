@@ -93,6 +93,54 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 10px;
+}
+
+.quote{
+	color: darkgrey;
+    text-transform: uppercase;
+    font-size: small;
+    margin-top: -15px;
+}
+
+.introtext{
+	margin-left: auto;
+  	margin-right: auto;
+    width: 70%;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #99bbff;
+  color: white;
+  font-weight: 700;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 12px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color:  #66ff66;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
 </style>
 </head>
 <body>
@@ -101,19 +149,19 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="Intro/public_html/Images/1.jpg" style="width:100%">
+  <img src="https://powerfulhokko.github.io/intro/Intro/public_html/Images/1.jpg" style="width:100%">
   <div class="text">Enjoying life</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="Intro/public_html/Images/2.jpg" style="width:100%">
+  <img src="https://powerfulhokko.github.io/intro/Intro/public_html/Images/2.jpg" style="width:100%">
   <div class="text">Lifting weights</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="Intro/public_html/Images/3.jpg" style="width:100%">
+  <img src="https://powerfulhokko.github.io/intro/Intro/public_html/Images/3.jpg" style="width:100%">
   <div class="text">Trying to be smarter than yesterday</div>
 </div>
 
@@ -127,6 +175,85 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<div id="main" class="center">
+	<h1>Hi, ik ben Jurgen<br>
+    <span class="quote">Via deze weg stel ik mezelf graag even voor</span><h1>
+</div>
+
+<div class="introtext">
+	<Strong class="parhead">Over mezelf</Strong>
+    <p>Ik ben Jurgen, 30 jaar en ben afkomstig vanuit het Kempische Mol.</p>
+<p>Mijn carri&egrave;re heeft tot nu toe veel verschillende aspecten gekend, ik ben lang geleden begonnen als militair en daarna het leven beginnen te verkennen.</p>
+<p>Initieel een aantal meer technische jobs gedaan (ik heb electrische installaties gestudeerd in het middelbaar), daarna richting sales gegaan, uiteindelijk administratie en door toeval (en durf) in m&apos;n vorige job de functie gehad als webshop manager.</p>
+<p>In m&apos;n vrije tijd ben ik iemand die zich zowel graag fysiek als intellectueel bezig houdt. Ik was een competitief powerlifter en strongman, en ik train nu nog wel, maar enkel voor het plezier. Ik leer graag dingen bij en zoek graag uitdagingen op. En zoals iedere Belg: ik drink af en toe ook graag eens een glaasje.</p>
+<p><br></p>
+</div>
+
+<div id="triviaTabs">	
+<button class="tablink" onclick="openPage('Books', this,  '#66ff66'
+)">Books</button>
+<button class="tablink" onclick="openPage('Strength', this, '#66ff66')" id="defaultOpen">Strength</button>
+<button class="tablink" onclick="openPage('Drinks', this, '#66ff66')">Drinks</button>
+<button class="tablink" onclick="openPage('Trivia', this, '#66ff66')">Trivia</button>
+
+<div id="Books" class="tabcontent">
+  <Strong>In geen specifieke volgorde, en vooral niet technische boeken</Strong>
+
+<ul>
+  <li style="font-style: italic">"Thinking, fast and slow" - Daniel Kahneman</li>
+  	<ul><li>In het dagelijkse leven gebruiken we onbewust vaak shortcuts om beslissingen te maken, die shortcuts hebben als doel dat we niet overwelmd raken door alles wat er rondom ons gebeurd. Maar deze zijn natuurlijk niet zonder fout en kunnen leiden tot foute beslissingen.</li></ul><br>
+    
+  <li style="font-style: italic">"Surely You're joking, Mr. Feynman" - Richard P. Feynman</li>
+  <ul><li>Richard Feynamn was een vooruitstrevende proffesor in de fysica, hij was een beetje een exentriek figuur en heeft meegewerkt aan veel intressante projecten. Dit boek staat vol met anecdotes over zijn inspirende leven.</li></ul><br>
+  
+  <li style="font-style: italic">"Be obsessed or be average" - Grant Cardone</li>
+  <ul><li>Dit boek gaat over het gebruik van obsessies om succesvol te zijn. Obsessies kunnen waardevol zijn als ze beheerst en gefocust zijn. Een positieve obsessie kan leiden tot het maximaliseren van het potentieel en een einde maken aan de 'epidemie van het gemiddelde'. Het ontkennen van obsessies zal resulteren in het negeren van dromen en het tolereren van middelmatigheid.</li></ul><br>
+  
+  <li style="font-style: italic">"Managing Oneself" - Peter F. Drucker</li>
+  <ul><li>Het boek helpt ons te begrijpen dat we verantwoordelijkheid voor onszelf moeten nemen. We moeten onze kracht en waarden begrijpen en moeten begrijpen waar we beter kunnen presteren en het beste resultaat kunnen geven. We moeten de kansen zoeken waar we onszelf kunnen zien groeien.</li></ul><br>
+  
+  <li style="font-style: italic">"48 Law of power" - Robert Greene</li>
+  <ul><li>Als het je lukt om je tegenstanders te verleiden, charmeren en bedriegen, bereik je de ultieme macht. Greene stelt dat hoe beter je wordt in het overhandigen van macht, hoe beter je vriend, minnaar en persoon zult worden.</li></ul><br>
+  
+  <li style="font-style: italic">"Disrupt yourself" - Jay Samit</li>
+  <ul><li>Disrupt Yourself legt uit hoe je de steeds snellere kracht van disruptieve innovatie in je persoonlijke leven kunt benutten, of het nu is om je carrière vooruit te helpen of om een bedrijf op te bouwen dat floreert, door je beperkingen te omarmen, je te concentreren op je sterke punten en flexibel en nieuwsgierig te blijven gedurende de weg.</li></ul><br>
+  
+  
+  <li style="font-style: italic">"Four seconds" - Peter Bregman</li>
+  <ul><li>Laat ons zien hoe we negatieve patronen kunnen vervangen door energieverhogend en productief gedrag. Om in onze snelle wereld te gedijen, hoeft u slechts vier seconden te pauzeren - de lengte van een diepe ademhaling - zodat we opzettelijke en tactische keuzes kunnen maken die tot betere resultaten leiden.</li></ul><br>
+  
+  <li style="font-style: italic">"How to discuss what matters most" - Douglas Stone</li>
+  <ul><li>De auteurs en communicatie-experts Douglas Stone en Bruce Patton bieden voorbeelden uit de praktijk en tips hoe je er doorheen kunt komen. Ze leren je ook over de gebruikelijke valkuilen van onaangename uitwisselingen en hoe je ze kunt vermijden.</li></ul><br>
+  
+  <li style="font-style: italic">"The enchoridion" - Epicetus</li>
+  <ul><li>De belangrijkste conclusie van Enchiridion is dat gebeurtenissen buiten onze controle ons niet in het minst mogen storen. De eerste stap is om te stoppen ze als tegenslagen te zien. Gebruik hiervoor de Epictetus-methode en overweeg of het ongeluk je eigen actie is, of het resultaat is van de acties van anderen of van de natuur. Als het niet je eigen actie is, heb je er geen controle over. In elk van die gevallen moet je jezelf resoluut vertellen dat het er niet toe doet. Om dit je denkproces te veranderen, moet je het elke keer doen, dus houd herinneringen bij de hand. Herhaling is de sleutel.</li></ul><br>
+  
+  <li style="font-style: italic">"On the shortness of life" - Seneca</li>
+  <ul><li>In zijn morele essay, On the Shortness of Life, herinnert Seneca, de stoïcijnse filosoof en toneelschrijver, ons dringend aan de niet-hernieuwbaarheid van onze belangrijkste hulpbron: onze tijd. Het is een verplichte lectuur voor iedereen die naar zijn volle potentieel wil leven, en het is een manifest over hoe je de controle over je leven terug kunt krijgen en het ten volle kunt leven.</li></ul><br>
+  
+
+</ul>  
+</div>
+
+<div id="Strength" class="tabcontent">
+  <strong>Zoals bovenaan beschreven ben ik een powerlifter/strongman, maar wat houdt dat precies in?</strong><br>
+
+<img src="https://powerfulhokko.github.io/intro/Intro/public_html/Images/sbd.jpg" style="width:100%">
+<p style="text-decoration: underline;">Powerlifting wat is dat?</p>
+<p>In powerlifting draait het erom om het maximale gewicht te heffen dat je kan heffen in de squat, bench en deadlift, je krijgt drie pogingen op elk onderdeel, en van elke onderdeel worden de beste uitvoeringen samen geteld om je totaal te berekenen.</p>
+</div>
+
+<div id="Drinks" class="tabcontent">
+  <h3>Drinks</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="Trivia" class="tabcontent">
+  <h3>Trivia</h3>
+  <p>Who we are and what we do.</p>
+</div>
 </div>
 
 <script>
@@ -156,6 +283,31 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 </script>
 
 </body>
